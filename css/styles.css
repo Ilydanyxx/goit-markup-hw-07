@@ -81,7 +81,9 @@ header {
   letter-spacing: 0.02em;
 
   display: block;
+  color: #2e2f42;
 }
+
 .menu-item:hover {
   font-size: 16px;
   line-height: 1.5;
@@ -632,6 +634,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: calc((100% - 32px) / 1);
 }
 .footer-subscribe-text {
   font-family: "Roboto";
@@ -697,6 +700,7 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 16px;
+  width: calc((100% - 34px) / 1);
 }
 .list {
   list-style: none;
@@ -1064,14 +1068,15 @@ footer {
   }
   .footer-form {
     flex-direction: row;
+    width: 453px;
   }
   .footer-part-subscribe {
     align-items: start;
   }
   .footer-input {
+    box-sizing: border-box;
     width: 264px;
     height: 40px;
-    box-sizing: border-box;
   }
   .footer-logo {
     justify-content: left;
@@ -1161,7 +1166,7 @@ footer {
     padding-bottom: 120px;
   }
   .fifth-media-item {
-    width: 168px;
+    width: calc((100% - 120px) / 6);
   }
   header {
     padding: 24px 156px 28px 156px;
@@ -1180,6 +1185,12 @@ footer {
   }
   .footer-part-media {
     margin-right: 80px;
+  }
+  .footer-form {
+    width: 449px;
+  }
+  .footer-part-subscribe {
+    width: auto;
   }
 }
 
@@ -1205,18 +1216,7 @@ footer {
 .modal-menu {
   padding: 40px;
 }
-.active-modal {
-  color: #404bbf;
-  font-family: "Roboto";
 
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  /* identical to box height, or 111% */
-
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-}
 .modal-menu-list {
   list-style: none;
   gap: 40px;
@@ -1240,6 +1240,18 @@ footer {
   /* NAVY BLUE */
 
   color: #2e2f42;
+}
+.active-modal {
+  color: #404bbf;
+  font-family: "Roboto";
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  /* identical to box height, or 111% */
+
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 .modal-contacts-list {
   list-style: none;
@@ -1303,4 +1315,7 @@ footer {
   .modal-textarea {
     width: 320px;
   }
+}
+.menu-container {
+  overflow: hidden;
 }

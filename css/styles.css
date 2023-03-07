@@ -1289,3 +1289,6 @@ footer {
 .menu-container {
   overflow: hidden;
 }
+.no-scroll {
+  overflow: hidden;
+}
